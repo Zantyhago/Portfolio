@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang = "es">
+<head>
+  <meta charset = "utf-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1"> <!-- Responsive -->
+  <title>Portfolio - Santiago S.</title>
+  <link rel = "stylesheet" href = "styles.css ">
+</head>
+
+<body title = "Portfolio - Santiago S." class = "oscuroso">
+  <header>
+    <nav title = "Barra de navegación">
+      <ul>
+        <li><a href = "#sobre-mi" title="Ir a la sección">Sobre mí</a></li>
+        <li><a href = "#proyectos" title="Ir a la sección">Proyectos</a></li>
+        <li><a href = "#contacto" title="Ir a la sección">Contacto</a></li>
+        <li><a href = "#referencias" title="Ir a la sección">Referencias</a></li>
+      </ul>
+    </nav> 
+  </header>
+
+  <main>
+    <div class = "inicio_div oscuroso" title = "Inicio">
+    <section id = "inicio">
+      <h1>Santiago David Sanchez Godoy</h1>
+      <p id = "oscuroso">Estudiante de la Licenciatura en Ciencias de la Computación en la Facultad de Ciencias Exactas, Físicas y Naturales.</p>
+    </section>
+    </div>
+
+    <div class = "aboutme_div oscuroso" title = "Acerca de mi">
+    <section id = "sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>Actualmente tengo 24 años.</p>
+      <p>Estoy cursando la materia Programación Web, en la cual vemos frontend.</p>
+      <p>Me gusta la programación en general y las matemáticas en parte también jijo.</p>
+      <img src = "img/yo.jpg" alt = "Foto personal" class = "fotuki" title = "yo owo"><br>
+    </section>
+    </div>
+
+    <div class = "proyectos_div oscuroso"title = "Algunos proy. propios">
+    <section id = "proyectos">
+      <h2>Proyectos</h2>
+      <h3>Nuevo Horizonte
+        <br><button id = "desplegar-btn" title = "Expandir area del proy.">Mostrar</button>
+        <article>
+          <p>Página creada para la empresa Nuevo Horizonte.<br>En la cual se registran los horarios de entrada/salida de los empleados.<br>Todo en una base de datos.</p>
+          <img src = "img/nh.jpg" alt = "Interfaz" class = "mustras"><br><br>
+          <a href = "https://github.com/Zantyhago/POO2025/tree/main/Unidad%205/Nuevo%20Horizonte" target = "_blank" title = "GitHub">Ver código fuente</a>
+        </article>
+      </h3>
+      <h3>Tabla de Posiciones
+        <br><button id = "desplegar-btn" title = "Expandir area del proy.">Mostrar</button>
+        <article>
+          <p>Tabla creada para la Liguilla de Rawson.<br>Se solicitó poder guardar y modificar los puntajes de cada equipo.</p>
+          <img src = "img/tabla.jpg" alt = "Tabla de posiciones" class = "mustras" title = "Tabla de Pocisiones"><br><br>
+          <a href = "https://github.com/Zantyhago/POO2025/tree/main/Unidad%202/PO%201/Recuperatorio/Tema%202" target="_blank" title = "GitHub">Ver código fuente</a>
+        </article>
+      </h3>
+      <h3>Py-Simon game
+        <br><button id = "desplegar-btn" title = "Expandir area del proy.">Mostrar</button>
+        <article>
+          <p>Juego del Simón Dice hecho en python con la librería TKinter.<br>Las partidas se guardan en un JSON.</p>
+          <img src = "img/puntaje.jpg" alt = "Py-Game" class = "mustras"  title = "Interfaz del juego"><br><br>
+          <a href="https://github.com/Zantyhago/POO24/tree/main/Unidad%204" target = "_blank" title = "GitHub">Ver código fuente</a>
+        </article>
+      </h3>
+    </section>
+    </div>
+
+    <div class = "contacto_div oscuroso" title = "Para contacto">
+    <section id = "contacto">
+      <h2>Contacto</h2>
+      <h3 id = "contact_h3">Mensaje directo:</h3>
+      <form>
+        <table border = "0">
+          <tr>
+            <td><label for = "nombre">Nombre</label></td>
+            <td><input id = "nombre" type = "text" placeholder = "Santiago Sanchez"></td>
+          </tr>
+          <tr>
+            <td><label for = "email">Email</label></td>
+            <td><input id = "email" type = "email" placeholder = "ejemplo@example.com"></td>
+          </tr>
+          <tr>
+            <td><label for = "mensaje">Mensaje</label></td>
+            <td><textarea id = "mensaje" placeholder = "Hola, me contacto con usted..."></textarea></td>
+          </tr>
+          <tr>
+            <td rowspan = "2"><button onclick = "listo(
+          document.getElementById('nombre').value,
+          document.getElementById('email').value,
+          document.getElementById('mensaje').value)">Enviar</button></td>
+          </tr>
+        </table>
+      </form>
+      <h3 id = "contact_h3_red">Redes sociales:</h3>
+        <ul id = "contact_list">
+          <li><a href = "https://www.instagram.com/zantyhagowo/" target = "_blank">Instagram</a></li><br>
+          <li><a href = "https://wa.me/542645433217" target = "_blank">Enviar WhatsApp</a></li><br>
+          <li><a href = "mailto:santiagodavidsanchezgodoy@gmail.com">Enviar correo</a></li>
+        </ul>
+    </section>
+    </div>
+
+    <div class = "referencias_div oscuroso" title = "Algunas referencias">
+    <section id = "referencias">
+      <h2>Referencias</h2>
+      <blockquote>“Lic. Jorge y Lic. Belén Calivar (mentores).”</blockquote>
+    </section>
+    </div>
+
+    <aside class = "oscuroso">
+      <h2>Información extra</h2>
+      <p>Me saqué 7 en poo y 9 en procedural :3</p>
+    </aside>
+  </main>
+
+  <footer class = "oscuroso">
+    <p>© 2025 Zantyhago. Todos los derechos reservados. 😏🍔</p>
+  </footer>
+
+  <button id = "subir-btn" title = "Volver arriba"></button>
+  <button id = "tema-btn" title = "Alternar tema" class = "botonsito"></button>
+  <script src = "scripts.js"></script>
+</body>
+</html>
