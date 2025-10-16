@@ -52,7 +52,9 @@ const fecha = new Date();
 const opciones = {
     year: 'numeric',
     month: 'long',
-    day: 'numeric'
+    day: 'numeric',
+    minute: 'numeric',
+    hour: 'numeric'
 };  
 const pF = document.createElement("p");
 pF.textContent = fecha.toLocaleDateString("es-ES", opciones);
