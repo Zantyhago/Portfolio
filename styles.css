@@ -1,0 +1,289 @@
+h1{
+    color: rgb(255, 94, 0);
+    text-align: center;
+}
+
+h2{
+    text-decoration: underline;
+}
+
+p{
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    color: rgb(230, 64, 64);
+    text-align: center;
+}
+
+nav{
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #09ae92;
+    background-image: url('img/verdugo 2.0.gif');
+    background-size: 155px;
+    background-repeat: no-repeat;
+    background-position: right;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    z-index: 1000;
+    position: fixed;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 0;
+    margin: 45px;
+    font-size: 30px;
+}
+
+.inicio_div{
+    color: #068904;
+    text-align: center;
+    font-style:inherit;
+    font-size: larger;
+    border: 10px solid greenyellow;
+    background-color: #9bf929a1;
+    border-radius: 20px;
+}
+
+.inicio_div.oscuro{
+    color: white;
+}
+
+.aboutme_div.oscuro{
+    background-color: #aeaeaec2;
+}
+
+.proyectos_div.oscuro{
+    background-color: #aeaeaec2;
+}
+
+.contacto_div.oscuro{
+    background-color: #aeaeaec2;
+}
+
+.referencias_div.oscuro{
+    background-color: #aeaeaec2;
+}
+
+.aboutme_div{
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    background-color: #ffffffc2;
+    border: 5px solid #04ff00;
+    border-style: dotted;
+    border-radius: 20px;
+    padding: 30px;
+    font-size: large;
+    color: rgb(7, 7, 6);
+    text-align: left;
+    font-style: italic;
+    background-image: url('img/espejo.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: right 70%;
+}
+
+.proyectos_div{
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    background-color: #ffffffc2;
+    border: 5px solid #04ff00;
+    border-style: dotted;
+    border-radius: 20px;
+    padding: 30px;
+    font-size: large;
+    text-align: right;
+    font-style: oblique;
+    background-image: url('img/logo-piton.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: left 30%;
+}
+
+article{
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
+}
+
+article.show{
+    max-height: 550px;
+    opacity: 1;
+}
+
+.mustras{
+    border-radius: 5px;
+    width: 360px;
+    box-shadow: 5px 0px 4px black;
+}
+
+.contacto_div{
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    background-color: #ffffffc2;
+    border: 5px solid #04ff00;
+    border-style: dotted;
+    border-radius: 20px;
+    padding: 30px;
+    font-size: large;
+    text-align: left;
+    font-style: oblique;
+    background-image: url('img/carta.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: right 40%;
+}
+
+#contact_h3{
+    margin-bottom: 0px;
+}
+
+#contact_h3_red{
+    margin-bottom: 20px;
+}
+
+table{
+    margin-top: 0px;
+    border-spacing: 20px;
+    border-collapse: separate;
+}
+
+th, td{
+    text-align: center;
+    vertical-align: middle;
+}
+
+#contact_list{
+    list-style-image: url('img/trollface.png');
+    padding: 0px 30px;
+    margin-top: 0px;
+}
+
+.referencias_div{
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    background-color: #ffffffc2;
+    border: 5px solid #04ff00;
+    border-style: dotted;
+    border-radius: 20px;
+    padding: 30px;
+    font-size: large;
+    text-align: right;
+    font-style: oblique;
+    background-image: url('img/referencia.png');
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: left 80%;
+}
+
+li{
+    color: aqua;
+}
+
+.fotuki{
+    border-radius: 5px;
+    box-shadow: 0px 6px 10px black;
+    width: 200px;
+}
+
+section{
+    scroll-margin-top: 200px;
+}
+
+body{
+    margin-top: 140px;
+    background-color: #2ba8ddc8;
+    background-image: url('img/jonny.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: local;
+}
+
+body.oscuro{
+    background-image: url('img/jonathan.png');
+    background-color: #2e2e2e;
+}
+
+aside{
+    margin-top: 20px;
+    text-align: center;
+}
+
+aside.oscuro{
+    color: white;
+}
+
+footer{
+    text-align: center;
+    color: black;
+}
+
+footer.oscuro{
+    color: white;
+}
+
+#tema-btn, #subir-btn{
+    bottom: 30px;
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    background-size: 55px 55px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    box-shadow: 0px 6px 10px black;
+}
+
+button{
+    width: 110px;
+    height: 30px;
+    background-color: #cbebac;
+    border-radius: 5px;
+    box-shadow: 3px 3px 0px black;
+    cursor: pointer;
+}
+
+::placeholder, label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+
+input, textarea{
+    width: 200px;
+    height: 20px;
+    box-shadow: 3px 3px 0px black;
+}
+
+#subir-btn{
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    right: 30px;
+    background-image: url('img/mano.png');
+}
+
+#subir-btn.show{
+    opacity: 1;
+}
+
+.botonsito{
+    display: block;
+    left: 30px;
+    background-image: url('img/luna.jpg');
+}
+
+.botonsito.oscuro{
+    background-image: url('img/sol.jpg');
+}
