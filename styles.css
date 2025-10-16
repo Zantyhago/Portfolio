@@ -58,18 +58,23 @@ nav ul{
 
 .aboutme_div.oscuro{
     background-color: #aeaeaec2;
+    transition: background-color 0.2s ease-in-out;
 }
 
 .proyectos_div.oscuro{
     background-color: #aeaeaec2;
+    transition: background-color 0.2s ease-in-out;
 }
 
 .contacto_div.oscuro{
     background-color: #aeaeaec2;
+    transition: background-color 0.2s ease-in-out;
 }
 
 .referencias_div.oscuro{
     background-color: #aeaeaec2;
+    transition: background-color 0.2s ease-in-out;
+
 }
 
 .aboutme_div{
@@ -209,6 +214,8 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: local;
+    transition: background-color 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out;
 }
 
 body.oscuro{
@@ -282,6 +289,7 @@ input, textarea{
     display: block;
     left: 30px;
     background-image: url('img/luna.jpg');
+    transition: background-image 0.2s ease-in-out;
 }
 
 .botonsito.oscuro{

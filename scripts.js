@@ -12,9 +12,9 @@ function listo(nombre, email, mensaje){
     }
 };
 
-let VolverBtn = document.getElementById("subir-btn");
+const VolverBtn = document.getElementById("subir-btn");
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 80) {
+    if (window.scrollY > 100) {
         VolverBtn.classList.toggle("show");
     } else {
         VolverBtn.classList.remove("show");
@@ -35,7 +35,7 @@ boton.addEventListener("click", () => {
     });
 });
 
-let TemaBtn = document.getElementById("tema-btn");
+const TemaBtn = document.getElementById("tema-btn");
 TemaBtn.addEventListener("click", () => {
     document.querySelectorAll(".oscuroso").forEach(elemento => {
         elemento.classList.toggle("oscuro");
@@ -49,7 +49,11 @@ TemaBtn.addEventListener("click", () => {
 
 const footer = document.querySelector("footer");
 const fecha = new Date();
+const opciones = {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+};  
 const pF = document.createElement("p");
-pF.textContent = "Fecha actual: " + fecha.toLocaleDateString("es-ES");
-
+pF.textContent = fecha.toLocaleDateString("es-ES", opciones);
 footer.appendChild(pF);
