@@ -14,7 +14,7 @@ function listo(nombre, email, mensaje){
 
 let VolverBtn = document.getElementById("subir-btn");
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 100) {
+    if (window.scrollY > 80) {
         VolverBtn.classList.toggle("show");
     } else {
         VolverBtn.classList.remove("show");
@@ -51,4 +51,5 @@ const footer = document.querySelector("footer");
 const fecha = new Date();
 const pF = document.createElement("p");
 pF.textContent = "Fecha actual: " + fecha.toLocaleDateString("es-ES");
+
 footer.appendChild(pF);
