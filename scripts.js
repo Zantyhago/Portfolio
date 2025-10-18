@@ -1,3 +1,7 @@
+function soloLetras(texto) {
+  return /^[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+$/.test(texto);
+}
+
 function listo(nombre, email, mensaje){
     if ((nombre.trim() === "") && (email.trim() === "") && (mensaje.trim() === "")){
         alert("Los campos están vacíos.")
@@ -8,8 +12,13 @@ function listo(nombre, email, mensaje){
     } else if (mensaje.trim() === ""){
         alert("No se puede enviar un mensaje en blanco..")
     } else {
-        alert("¡Mensaje enviado, " + nombre + "! Gracias por contactarte.")
-    }
+        if (soloLetras(nombre)){
+            alert("¡Mensaje enviado, " + nombre + "! Gracias por contactarte.")
+        }
+        else{
+            alert("Error en el ingreso del nombre.")
+        };
+    };
 };
 
 const VolverBtn = document.getElementById("subir-btn");
@@ -40,9 +49,9 @@ TemaBtn.addEventListener("click", () => {
     document.querySelectorAll(".oscuroso").forEach(elemento => {
         elemento.classList.toggle("oscuro");
             if(elemento.classList.contains("oscuro")){
-            TemaBtn.style.backgroundImage = "url('img/sol.jpg')";
+                TemaBtn.style.backgroundImage = "url('img/sol.jpg')";
             }else{
-            TemaBtn.style.backgroundImage = "url('img/luna.jpg')";
+                TemaBtn.style.backgroundImage = "url('img/luna.jpg')";
             }
     });
 });
@@ -58,5 +67,4 @@ const opciones = {
 };  
 const pF = document.createElement("p");
 pF.textContent = fecha.toLocaleDateString("es-ES", opciones);
-
 footer.appendChild(pF);
