@@ -122,14 +122,18 @@ article{
 }
 
 article.show{
-    max-height: 550px;
+    max-height: 700px;
     opacity: 1;
 }
 
 .mustras{
     border-radius: 5px;
+    transition: width 0.2s ease-in-out;
     width: 360px;
     box-shadow: 5px 0px 4px black;
+}
+.mustras.agrandadas{
+    width: 560px;
 }
 
 .contacto_div{
@@ -201,6 +205,11 @@ li{
     border-radius: 5px;
     box-shadow: 0px 6px 10px black;
     width: 200px;
+    transition: width 0.2s ease-in-out;
+}
+
+.fotuki.agranda{
+    width: 400px;
 }
 
 section{

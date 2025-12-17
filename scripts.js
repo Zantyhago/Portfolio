@@ -68,3 +68,20 @@ const opciones = {
 const pF = document.createElement("p");
 pF.textContent = fecha.toLocaleDateString("es-ES", opciones);
 footer.appendChild(pF);
+
+const foto = document.querySelector(".fotuki");
+foto.addEventListener("mouseenter", () =>{
+    foto.classList.add("agranda");
+});
+foto.addEventListener("mouseleave", () =>{
+    foto.classList.remove("agranda");
+});
+
+document.querySelectorAll(".mustras").forEach((imgs) =>{
+    imgs.addEventListener("mouseenter", () => {
+        imgs.classList.add("agrandadas");
+    });
+    imgs.addEventListener("mouseleave", () => {
+        imgs.classList.remove("agrandadas");
+    })
+});
